@@ -11,3 +11,5 @@ e.g.
 ```
 dotnet run SampleFiles/6_helix_origami_rectangle.oxview
 ```
+
+Built this to migrate to [nanoVR](https://github.com/tilabberkeley/nanoVR)
