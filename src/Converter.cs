@@ -44,19 +44,33 @@ namespace oxViewToOxDNA.src
                 datWriter.WriteLine("E = 0 0 0");
 
                 int strandCounter = 1;
+                int globalNucleotideIndex = -1;
                 foreach (Strand strand in strands)
                 {
-                    int prime5 = -1;
-                    int prime3 = 1;
                     for (int i = strand.Monomers.Count - 1; i >= 0; i--)
                     {
+                        int prime5 = globalNucleotideIndex;
+                        int prime3 = globalNucleotideIndex + 2;
+
+                        // Beginning and end of strand edge cases
+                        if (i == strand.Monomers.Count - 1)
+                        {
+                            prime5 = -1;
+                        }
+                        else if (i == 0)
+                        {
+                            prime3 = -1;
+                        }
+
                         Monomer monomer = strand.Monomers[i];
 
                         // Top file - last nucleotide should have -1 as its prime3 value
-                        topWriter.WriteLine($"{strandCounter} {monomer.Type} {prime5++} {(i != 0 ? prime3++ : "-1")}");
+                        topWriter.WriteLine($"{strandCounter} {monomer.Type} {prime5} {prime3}");
 
                         // Dat file
                         datWriter.WriteLine($"{string.Join(" ", monomer.P)} {string.Join(" ", monomer.A1)} {string.Join(" ", monomer.A3)}" + " 0 0 0 0 0 0");
+
+                        globalNucleotideIndex++;
                     }
                     strandCounter++;
                 }

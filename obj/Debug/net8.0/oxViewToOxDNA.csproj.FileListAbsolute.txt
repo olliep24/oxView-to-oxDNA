@@ -16,3 +16,4 @@ C:\code\oxViewToOxDNA\oxViewToOxDNA\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\code\oxViewToOxDNA\oxViewToOxDNA\obj\Debug\net8.0\oxViewToOxDNA.csproj.AssemblyReference.cache
 C:\code\oxViewToOxDNA\oxViewToOxDNA\obj\Debug\net8.0\oxViewTo.8017042D.Up2Date
 C:\code\oxViewToOxDNA\oxViewToOxDNA\bin\Debug\net8.0\websocket-sharp-core.dll
+C:\code\oxViewToOxDNA\oxViewToOxDNA\obj\Debug\net8.0\oxViewToOxDNA.sourcelink.json
