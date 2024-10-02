@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "r/i4FDxtqio=",
+  "success": true,
+  "projectFilePath": "C:\\code\\oxViewToOxDNA\\oxViewToOxDNA\\oxViewToOxDNA.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Oliver Petrick\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Oliver Petrick\\.nuget\\packages\\websocketsharp.core\\1.0.0\\websocketsharp.core.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

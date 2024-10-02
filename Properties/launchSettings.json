@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "oxViewToOxDNA": {
+      "commandName": "Project",
+      "commandLineArgs": "C:/code/oxViewtooxDNA/oxViewtooxDNA/SampleFiles/example_small.oxview"
+    }
+  }
+}
